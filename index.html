@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wiki Viewer</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="app">
+        <section class="webdesigntuts-workshop">
+            <div id="header">
+                <h1 class="text-center text-uppercase text-info">
+                    wiki <span class="glyphicon glyphicon-eye-open text-success"></span> viewer
+                </h1>
+            </div>
+            <div class="text-center">
+                <input class="text-center" type="search" placeholder="Enter a Search term..." id="inputBox">
+                    <br /><br /><br />
+                <button class="text-center btn btn-lg btn-danger" id="button">Search</button>
+            </div>
+            <ul id="wikis">
+                <div id="no-input">
+                    <div class="alert alert-danger alert-dismissable">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong id="error"></strong>
+                    </div>
+                </div>
+                <div class="list-group">
+                    <a href="https://en.wikipedia.org/wiki/Special:Random" class="list-group-item" target="_blank">
+                        <h4 class="list-group-item-heading">Click here for a Random Article</h4>
+                    </a><br />
+                    <div id="results">
+                        <!--All the results appear here-->
+                    </div>
+                </div>
+            </ul>
+        </section>
+    </div>
+    <script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
